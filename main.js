@@ -33,7 +33,7 @@ if (modelStatus != "") {
     for (i = 0; i < objects.length; i++) {
         document.getElementById("h3").innerHTML = "Objetos Detectados"
         fill("red");
-        percent = floor(objects[i].confidense * 100)
+        percent = floor(objects[i].confidence * 100)
         text(objects[i].label + " "+ percent + "%", objects[i].x, objects[i].y);
         noFill()
         stroke("red");
